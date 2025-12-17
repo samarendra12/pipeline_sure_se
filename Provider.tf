@@ -20,6 +20,6 @@ provider "azurerm" {
 }
 
 resource"azurerm_resource_group" "vinod" {
-    name= "rajiv"
+    name= "rajiv123"
     location= "central india"
 }
