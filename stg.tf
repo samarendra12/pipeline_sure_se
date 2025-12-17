@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "example" {
-  name                     = "storageaccountname"
+  name                     = "stg420"
   resource_group_name      = "rajiv"
   location                 = "central india"
   account_tier             = "Standard"
