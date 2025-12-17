@@ -2,6 +2,7 @@ trigger:
 - main
 pool:
   name: 'agent ka jund'
+
 steps: 
 - task: TerraformTask@5
   inputs:
@@ -12,6 +13,7 @@ steps:
     backendAzureRmResourceGroupName: 'rajiv'
     backendAzureRmStorageAccountName: 'stg420'
     backendAzureRmContainerName: 'amarendra'
+    backendAzureRmKey: 'pipeline_sure_se/terraform.tfstate'
     backendAzureRmKey: 'pipeline_sure_se/terraform.tfstate'
 
 - task: TerraformTask@5
