@@ -14,3 +14,12 @@ steps:
     backendAzureRmStorageAccountName: 'stg420'
     backendAzureRmContainerName: 'amarendra'
     backendAzureRmKey: 'pipeline_sure_se/terraform.tfstate'
+    backendAzureRmKey: 'pipeline_sure_se/terraform.tfstate'
+
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    environmentServiceNameAzureRM: 'samaridhi'
+    environmentAzureRmOverrideSubscriptionID: 'e5476362-58a0-48f7-8197-5aa05a4abfa5'
+    environmentAzureRmUseIdTokenGeneration: true
