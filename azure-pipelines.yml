@@ -1,0 +1,15 @@
+trigger:
+- main
+pool:
+ -agent ka jund
+
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'samaridhi'
+    backendAzureRmOverrideSubscriptionID: 'e5476362-58a0-48f7-8197-5aa05a4abfa5'
+    backendAzureRmResourceGroupName: 'rajiv'
+    backendAzureRmStorageAccountName: 'stg420'
+    backendAzureRmContainerName: 'amarendra'
+    backendAzureRmKey: 'terraform.tfstate'
