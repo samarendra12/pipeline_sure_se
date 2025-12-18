@@ -14,7 +14,6 @@ steps:
     backendAzureRmStorageAccountName: 'stg420'
     backendAzureRmContainerName: 'amarendra'
     backendAzureRmKey: 'pipeline_sure_se/terraform.tfstate'
-    backendAzureRmKey: 'pipeline_sure_se/terraform.tfstate'
 
 - task: TerraformTask@5
   inputs:
